@@ -31,7 +31,7 @@ sed -i -e s/"CMAKE_CXX_STANDARD 14"/"CMAKE_CXX_STANDARD 17"/g ./src/urdf/urdf/CM
 
 rm -rf ./src/rosconsole
 cd src
-git clone https://github.com/dreuter/rosconsole.git -b log4cxx-0.12
+git clone https://github.com/tatsuyai713/rosconsole
 cd ..
 
 ./src/catkin/bin/catkin_make_isolated --install -DCMAKE_BUILD_TYPE=Release
