@@ -2,7 +2,7 @@
 
 rm -rf ~/ros_catkin_ws
 
-export ROS_DISTRO noetic
+ROS_DISTRO=noetic
 
 sudo apt-get install python3-rosdep python3-rosinstall-generator python3-vcstools python3-vcstool build-essential
 sudo rosdep init
