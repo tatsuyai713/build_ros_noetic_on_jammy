@@ -14,6 +14,8 @@ rosinstall_generator desktop_full --rosdistro noetic --deps --tar > noetic-deskt
 mkdir ./src
 vcs import --input noetic-desktop-full.rosinstall ./src
 
+sudo apt-get install libfltk1.3-dev
+
 #hddtemp disable patch
 sed -i -e s/"<run_depend>hddtemp<\/run_depend>"/"<\!-- <run_depend>hddtemp<\/run_depend> -->"/g ./src/diagnostics/diagnostic_common_diagnostics/package.xml
 
